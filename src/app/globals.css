@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: theme("colors.background");
+  max-width: 1920px;
+  margin: auto;
+}
