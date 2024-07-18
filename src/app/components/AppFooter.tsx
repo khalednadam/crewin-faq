@@ -82,12 +82,12 @@ const AppFooter = () => {
   ];
   return (
     <div className="flex flex-col">
-      <div className="flex flex-row justify-between items-center">
-        <div className="flex items-start justify-start flex-row space-x-20">
+      <div className="flex md:flex-row flex-col  md:justify-between md:items-center">
+        <div className="flex md:flex-row flex-col items-start justify-start gap-y-10 md:space-x-20">
           {menu.map((item) => (
-            <div key={item.title}>
+            <div key={item.title} className="w-full h-full">
               <h6 className="font-bold text-md">{item.title}</h6>
-              <ul className="flex flex-col space-y-3 pt-4">
+              <ul className="flex flex-col space-y-3 pt-4 ">
                 {item.children.map((child) => (
                   <li className="opacity-60 text-sm cursor-pointer">
                     {child.label}
@@ -97,7 +97,7 @@ const AppFooter = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col items-end space-y-4">
+        <div className="flex flex-col items-start my-10 md:items-end space-y-4 ">
           <Image
             src={Logo}
             style={{
@@ -106,7 +106,7 @@ const AppFooter = () => {
             }}
             alt="logo"
           />
-          <p className="text-end opacity-50 text-xs">
+          <p className="md:text-end opacity-50 text-xs">
             MARITIME WORKFORCE PLATFORM THAT MEETS <br /> SHEFARERS & SEAFARERS
             WITH SHIPPING COMPANIES
           </p>
@@ -114,7 +114,7 @@ const AppFooter = () => {
         </div>
       </div>
       <Divider type="horizontal" />
-      <div className="flex justify-between items-end w-full">
+      <div className="flex md:flex-row flex-col  md:justify-between  items-center w-full">
         <p>
           &copy; copyright {new Date().getFullYear()} by CreWin. All Rights
           Reserved.
