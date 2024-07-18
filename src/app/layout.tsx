@@ -25,7 +25,6 @@ export default function RootLayout({
         <ConfigProvider
           theme={{
             token: {
-              // Seed Token
               colorPrimary: "#012030",
               fontFamily: "Montserrat",
             },
