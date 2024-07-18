@@ -75,11 +75,11 @@ const AppHeader = () => {
             Login
           </Button>
         </Flex>
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center">
           <Button
             type="primary"
             onClick={showDrawer}
-            className="rounded-full"
+            className="rounded-full "
             icon={<Icon icon="ph:list" width={20} color="white" />}
           ></Button>
           <Drawer onClose={onClose} open={open} className="relative">
