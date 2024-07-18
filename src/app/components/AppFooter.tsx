@@ -81,9 +81,9 @@ const AppFooter = () => {
     },
   ];
   return (
-    <div className="flex lg:flex-col">
-      <div className="flex flex-col lg:flex-row justify-between items-center">
-        <div className="flex flex-col items-start justify-start lg:flex-row space-x-20">
+    <div className="flex flex-col">
+      <div className="flex flex-row justify-between items-center">
+        <div className="flex items-start justify-start flex-row space-x-20">
           {menu.map((item) => (
             <div key={item.title}>
               <h6 className="font-bold text-md">{item.title}</h6>
