@@ -3,8 +3,10 @@ import Logo from "../../../public/crewin-logo.svg";
 import Image from "next/image";
 import { Button, Divider } from "antd";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { useTranslations } from "next-intl";
 
 const AppFooter = () => {
+  const t = useTranslations("footer");
   const socials = [
     {
       icon: "jam:twitter",
@@ -22,59 +24,55 @@ const AppFooter = () => {
       icon: "jam:linkedin",
       link: "https://linkedin.com",
     },
-    {
-      icon: "",
-      link: "",
-    },
   ];
 
   const menu = [
     {
-      title: "Company",
+      title: t("company"),
       children: [
         {
-          label: "Terms of Service",
+          label: t("terms-of-service"),
           link: "/terms-of-service",
         },
         {
-          label: "Privacy Policy",
+          label: t("privacy-policy"),
           link: "/privacy-policy",
         },
         {
-          label: "FAQ",
+          label: t("faq"),
           link: "/faq",
         },
         {
-          label: "About",
+          label: t("about"),
           link: "/about",
         },
         {
-          label: "Contact",
+          label: t("contact"),
           link: "/contact",
         },
       ],
     },
     {
-      title: "Platform",
+      title: t("platform"),
       children: [
         {
-          label: "Pricing Table",
+          label: t("pricing-table"),
           link: "/pricing-table",
         },
         {
-          label: "Seaferer",
-          link: "/seaferer",
+          label: t("seafarer"),
+          link: "/seafarer",
         },
         {
-          label: "Company",
+          label: t("company"),
           link: "/company",
         },
         {
-          label: "Career",
+          label: t("career"),
           link: "/career",
         },
         {
-          label: "Mobile Apps",
+          label: t("mobile-apps"),
           link: "/mobile-apps",
         },
       ],
@@ -82,10 +80,10 @@ const AppFooter = () => {
   ];
   return (
     <div className="flex flex-col">
-      <div className="flex md:flex-row flex-col  md:justify-between md:items-center">
+      <div className="flex md:flex-row flex-col md:justify-between md:items-center">
         <div className="flex md:flex-row flex-col items-start justify-start gap-y-10 md:space-x-20">
           {menu.map((item) => (
-            <div key={item.title} className="w-full h-full">
+            <div key={item.title} className="h-full ">
               <h6 className="font-bold text-md">{item.title}</h6>
               <ul className="flex flex-col space-y-3 pt-4 ">
                 {item.children.map((child) => (
@@ -106,18 +104,19 @@ const AppFooter = () => {
             }}
             alt="logo"
           />
-          <p className="md:text-end opacity-50 text-xs">
-            MARITIME WORKFORCE PLATFORM THAT MEETS <br /> SHEFARERS & SEAFARERS
-            WITH SHIPPING COMPANIES
+          <p className="md:text-end opacity-50 text-xs md:w-2/3">
+            {t("company-slag")}
+            {/* MARITIME WORKFORCE PLATFORM THAT MEETS <br /> SHEFARERS & SEAFARERS
+            WITH SHIPPING COMPANIES */}
           </p>
-          <Button type="primary">Login</Button>
+          <Button type="primary">{t("login")}</Button>
         </div>
       </div>
       <Divider type="horizontal" />
       <div className="flex md:flex-row flex-col  md:justify-between  items-center w-full">
         <p>
-          &copy; copyright {new Date().getFullYear()} by CreWin. All Rights
-          Reserved.
+          &copy;
+          {t("copyright", { year: new Date().getFullYear() })}
         </p>
         <div className="flex space-x-5">
           {socials.map((social) => (

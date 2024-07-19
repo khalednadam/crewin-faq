@@ -1,26 +1,31 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Header } from "antd/es/layout/layout";
-import { Button, Divider, Drawer, Flex } from "antd";
+import { Button, Divider, Drawer, Flex, MenuProps } from "antd";
 import Image from "next/image";
 import Logo from "../../../public/crewin-logo.svg";
 import { Icon } from "@iconify/react";
+import Dropdown from "antd/es/dropdown/dropdown";
+import LangSelector from "./LangSelector";
+import { useTranslations } from "next-intl";
 
 const AppHeader = () => {
+  const t = useTranslations("header");
   const items = [
     {
-      label: "Homepage",
+      label: t("home"),
       key: "home",
     },
     {
-      label: "About",
+      label: t("about"),
       key: "about",
     },
     {
-      label: "Contact",
+      label: t("contact"),
       key: "contact",
     },
   ];
+
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const scrollHandler = () => {
@@ -38,6 +43,7 @@ const AppHeader = () => {
   const onClose = () => {
     setOpen(false);
   };
+
   return (
     <Header
       className={`w-full bg-background max-w-[1920px] mx-auto sticky top-0 z-10 transition-all duration-700 ${isScrolled && "shadow-md "} `}
@@ -65,14 +71,19 @@ const AppHeader = () => {
             type="vertical"
             orientation="center"
           ></Divider>
-          <Icon className="cursor-pointer" icon="flag:us-4x3" width={30} />
+          <LangSelector />
+          {/* <Dropdown menu={{ items }}>
+            <a onClick={(e) => e.preventDefault()}>
+              <Icon className="cursor-pointer" icon="flag:us-4x3" width={30} />
+            </a>
+          </Dropdown> */}
           <Divider
             style={{ opacity: 1, backgroundColor: "#C0C0C0", height: "40%" }}
             type="vertical"
             orientation="center"
           ></Divider>
           <Button type="primary" size="middle">
-            Login
+            {t("login")}
           </Button>
         </Flex>
         <div className="md:hidden flex items-center">

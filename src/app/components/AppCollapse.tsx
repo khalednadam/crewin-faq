@@ -3,56 +3,55 @@
 import React, { useState } from "react";
 import CollapseItem from "./CollapseItem";
 import { Collapse, CollapseProps, Tabs, TabsProps } from "antd";
+import { useTranslations } from "next-intl";
 
 const AppCollapse = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const t = useTranslations("questions");
+  const [selectedCategory, setSelectedCategory] = useState(t("all"));
   const questions = [
     {
-      category: "Seafarer",
-      question: "Is there a registration or subscription fee?",
+      category: t("seafarer"),
+      question: t("registration_fee"),
       answer:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptate cumque earum sapiente et officia provident, ullam commodi omnis sit, illo placeat nostrum obcaecati repellendus? Facilis aliquid architecto adipisci in?",
       icon: "ph:user",
     },
     {
-      category: "Seafarer",
-      question: "Are there any conditions for applying?",
+      category: t("seafarer"),
+      question: t("conditions"),
       answer:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptate cumque earum sapiente et officia provident, ullam commodi omnis sit, illo placeat nostrum obcaecati repellendus? Facilis aliquid architecto adipisci in?",
       icon: "ph:user",
     },
     {
-      category: "Company",
-      question:
-        "Do I need to spend a packet again for a seafarer I have imaged?",
+      category: t("company"),
+      question: t("spend_packet"),
       answer:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptate cumque earum sapiente et officia provident, ullam commodi omnis sit, illo placeat nostrum obcaecati repellendus? Facilis aliquid architecto adipisci in?",
       icon: "hugeicons:building-03",
     },
     {
-      category: "Seafarer",
-      question: "How do companies contact me?",
+      category: t("seafarer"),
+      question: t("companies_contact"),
       answer:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptate cumque earum sapiente et officia provident, ullam commodi omnis sit, illo placeat nostrum obcaecati repellendus? Facilis aliquid architecto adipisci in?",
       icon: "ph:user",
     },
     {
-      category: "Cadet",
-      question: "Can I see the reference grades of my instructors? ",
+      category: t("cadet"),
+      question: t("grades"),
       answer:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptate cumque earum sapiente et officia provident, ullam commodi omnis sit, illo placeat nostrum obcaecati repellendus? Facilis aliquid architecto adipisci in?",
       icon: "hugeicons:mortarboard-02",
     },
     {
-      category: "Company",
-      question: "Is there a charge for detailed filtering? ",
+      category: t("company"),
+      question: t("filter_charge"),
       answer:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptate cumque earum sapiente et officia provident, ullam commodi omnis sit, illo placeat nostrum obcaecati repellendus? Facilis aliquid architecto adipisci in?",
       icon: "hugeicons:building-03",
     },
   ];
-
-  const categories = ["All", "Seafarer", "Company", "Cadet"];
 
   const onChange = (key: string) => {
     setSelectedCategory(key);
@@ -60,20 +59,20 @@ const AppCollapse = () => {
 
   const items: TabsProps["items"] = [
     {
-      key: "All",
-      label: "All",
+      key: t("all"),
+      label: t("all"),
     },
     {
-      key: "Seafarer",
-      label: "Seafarer",
+      key: t("seafarer"),
+      label: t("seafarer"),
     },
     {
-      key: "Company",
-      label: "Company",
+      key: t("company"),
+      label: t("company"),
     },
     {
-      key: "Cadet",
-      label: "Cadet",
+      key: t("cadet"),
+      label: t("cadet"),
     },
   ];
   return (
@@ -91,7 +90,7 @@ const AppCollapse = () => {
           .filter(
             (question) =>
               question.category === selectedCategory ||
-              selectedCategory === "All"
+              selectedCategory === t("all")
           )
           .map((question) => (
             <CollapseItem
