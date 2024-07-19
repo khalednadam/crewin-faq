@@ -1,0 +1,40 @@
+{
+  "faq": {
+    "faq": "FAQ",
+    "intro": "Welcome to our FAQ page! Here, you will find answers to the most commonly asked questions about our services, products, and policies.If you need further assistance, please feel free to contact our support team."
+  },
+  "header": {
+    "home": "Homepage",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "footer": {
+    "company": "Company",
+    "terms-of-service": "Terms of Service",
+    "privacy-policy": "Privacy Policy",
+    "faq": "FAQ",
+    "about": "About",
+    "contact": "Contact",
+    "platform": "Platform",
+    "pricing-table": "Pricing Table",
+    "seafarer": "Seafarer",
+    "career": "Career",
+    "mobile-apps": "Mobile Apps",
+    "copyright": "copyright {year} by CreWin. All Rights Reserved.",
+    "company-slag": "MARITIME WORKFORCE PLATFORM THAT MEET SHEFARERS & SEAFARERS WITH SHIPPING COMPANIES",
+    "login": "Login"
+  },
+  "questions": {
+    "all": "All",
+    "seafarer": "Seafarer",
+    "company": "Company",
+    "cadet": "Cadet",
+    "registration_fee": "Is there a registration or subscription fee?",
+    "conditions": "Are there any conditions for applying?",
+    "spend_packet": "Do I need to spend a packet again for a seafarer I have imaged?",
+    "companies_contact": "How do companies contact me?",
+    "grades": "Can I see the reference grades of my instructors?",
+    "filter_charge": "Is there a charge for detailed filtering?"
+  }
+}

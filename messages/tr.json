@@ -1,0 +1,40 @@
+{
+  "faq": {
+    "faq": "SSS",
+    "intro": "SSS sayfamıza hoş geldiniz! Burada hizmetlerimiz, ürünlerimiz ve politikalarımız hakkında en sık sorulan soruların cevaplarını bulabilirsiniz. Daha fazla yardıma ihtiyacınız olursa, lütfen destek ekibimizle iletişime geçmekten çekinmeyin."
+  },
+  "header": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "login": "Giriş"
+  },
+  "footer": {
+    "company": "Şirket",
+    "terms-of-service": "Hizmet Şartları",
+    "privacy-policy": "Gizlilik Politikası",
+    "faq": "SSS",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "platform": "Platform",
+    "pricing-table": "Fiyat Tablosu",
+    "seafarer": "Denizci",
+    "career": "Kariyer",
+    "mobile-apps": "Mobil Uygulamalar",
+    "copyright": "Telif hakkı {year} CreWin tarafından. Tüm Hakları Saklıdır.",
+    "company-slag": "DENİZCİLER VE SEFERCİLERİ DENİZCİLİK ŞİRKETLERİ İLE BULUŞTURAN DENİZCİLİK İŞGÜCÜ PLATFORMU",
+    "login": "Giriş"
+  },
+  "questions": {
+    "all": "Tümü",
+    "seafarer": "Denizci",
+    "company": "Şirket",
+    "cadet": "Stajyer",
+    "registration_fee": "Kayıt veya abonelik ücreti var mı?",
+    "conditions": "Başvuru için herhangi bir şart var mı?",
+    "spend_packet": "Görüntülediğim bir denizci için tekrar bir paket harcamam gerekiyor mu?",
+    "companies_contact": "Şirketler bana nasıl ulaşır?",
+    "grades": "Eğitmenlerimin referans notlarını görebilir miyim?",
+    "filter_charge": "Detaylı filtreleme için bir ücret var mı?"
+  }
+}
