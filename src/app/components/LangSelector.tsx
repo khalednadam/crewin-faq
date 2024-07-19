@@ -21,9 +21,7 @@ const LangSelector = () => {
       key: "en",
       label: (
         <div>
-          {/* <a target="_self" rel="noopener noreferrer" href="/en"> */}
           <Icon className="cursor-pointer" icon="flag:us-4x3" width={30} />
-          {/* </a> */}
         </div>
       ),
     },
@@ -31,9 +29,7 @@ const LangSelector = () => {
       key: "tr",
       label: (
         <div>
-          {/* <a target="_self" rel="noopener noreferrer" href="/tr"> */}
           <Icon className="cursor-pointer" icon="flag:tr-4x3" width={30} />
-          {/* </a> */}
         </div>
       ),
     },

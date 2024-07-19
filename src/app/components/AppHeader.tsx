@@ -5,7 +5,6 @@ import { Button, Divider, Drawer, Flex, MenuProps } from "antd";
 import Image from "next/image";
 import Logo from "../../../public/crewin-logo.svg";
 import { Icon } from "@iconify/react";
-import Dropdown from "antd/es/dropdown/dropdown";
 import LangSelector from "./LangSelector";
 import { useTranslations } from "next-intl";
 
@@ -72,11 +71,6 @@ const AppHeader = () => {
             orientation="center"
           ></Divider>
           <LangSelector />
-          {/* <Dropdown menu={{ items }}>
-            <a onClick={(e) => e.preventDefault()}>
-              <Icon className="cursor-pointer" icon="flag:us-4x3" width={30} />
-            </a>
-          </Dropdown> */}
           <Divider
             style={{ opacity: 1, backgroundColor: "#C0C0C0", height: "40%" }}
             type="vertical"

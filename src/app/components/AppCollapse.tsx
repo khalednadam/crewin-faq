@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import CollapseItem from "./CollapseItem";
-import { Collapse, CollapseProps, Tabs, TabsProps } from "antd";
+import { Tabs, TabsProps } from "antd";
 import { useTranslations } from "next-intl";
 
 const AppCollapse = () => {
