@@ -87,7 +87,10 @@ const AppFooter = () => {
               <h6 className="font-bold text-md">{item.title}</h6>
               <ul className="flex flex-col space-y-3 pt-4 ">
                 {item.children.map((child) => (
-                  <li className="opacity-60 text-sm cursor-pointer">
+                  <li
+                    key={child.link}
+                    className="opacity-60 text-sm cursor-pointer"
+                  >
                     {child.label}
                   </li>
                 ))}
@@ -119,6 +122,7 @@ const AppFooter = () => {
         <div className="flex space-x-5">
           {socials.map((social) => (
             <Icon
+              key={social.link}
               icon={social.icon}
               width={20}
               opacity={0.3}
