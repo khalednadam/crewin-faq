@@ -100,7 +100,7 @@ const AppHeader = () => {
               ))}
               <Divider />
               <Button className="" type="primary" size="middle">
-                Login
+                {t("login")}
               </Button>
               <Divider />
               <div className="mx-auto w-full left-0 bottom-10 absolute flex justify-center">
