@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Header } from "antd/es/layout/layout";
-import { Button, Divider, Drawer, Flex, MenuProps } from "antd";
+import { Button, Divider, Drawer, Flex } from "antd";
 import Image from "next/image";
 import Logo from "../../../public/crewin-logo.svg";
 import { Icon } from "@iconify/react";

@@ -106,8 +106,6 @@ const AppFooter = () => {
           />
           <p className="md:text-end opacity-50 text-xs md:w-2/3">
             {t("company-slag")}
-            {/* MARITIME WORKFORCE PLATFORM THAT MEETS <br /> SHEFARERS & SEAFARERS
-            WITH SHIPPING COMPANIES */}
           </p>
           <Button type="primary">{t("login")}</Button>
         </div>
