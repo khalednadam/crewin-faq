@@ -103,13 +103,7 @@ const AppHeader = () => {
                 Login
               </Button>
               <Divider />
-              <div className="mx-auto w-full left-0 bottom-10 absolute flex justify-center">
-                <Icon
-                  className="cursor-pointer"
-                  icon="flag:us-4x3"
-                  width={30}
-                />
-              </div>
+              <LangSelector />
             </Flex>
           </Drawer>
         </div>
